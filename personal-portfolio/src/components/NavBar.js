@@ -16,10 +16,14 @@ export const NavBar = () => {
                 setScrolled(false);
             }
         };
+
+        window.addEventListener('scroll', onScroll);
+
+        return ()=>window.removeEventListener('scroll', onScroll);
     },[])
 
     return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
       <Container>
         <Navbar.Brand href="#home">
             <img src={''} alt="logo" />
@@ -29,9 +33,18 @@ export const NavBar = () => {
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#skills">Skills</Nav.Link>
-            <Nav.Link href="#projects">Projects</Nav.Link>
+            <Nav.Link 
+            href="#home" 
+            className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} 
+            onClick={() => onUpdateActiveLink('home')} >Home</Nav.Link>
+            <Nav.Link 
+            href="#skills" 
+            className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'}
+            onClick={() => onUpdateActiveLink('skills')} >Skills</Nav.Link>
+            <Nav.Link 
+            href="#projects" 
+            className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'}
+            onClick={() => onUpdateActiveLink('projects')} >Projects</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
