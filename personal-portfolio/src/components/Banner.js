@@ -15,6 +15,8 @@ export const Banner = () => {
       <Container>
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7}>
+            <h1>Welcome</h1>
+            <p>fhjuvgkfdhgfbhkhkhkhgsg</p>
           </Col>
           <Col xs={12} md={6} xl={5}>
           </Col>
