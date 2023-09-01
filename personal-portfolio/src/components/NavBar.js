@@ -46,9 +46,9 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="#home"><img src={navIcon1} alt="" /></a>
-                <a href="#skills"><img src={navIcon2} alt="" /></a>
-                <a href="#projects"><img src={navIcon3} alt="" /></a>
+                <a href="https://www.linkedin.com/in/lucianacaminoscano/" target="_blank"><img src={navIcon1} alt="linkedin-icon" /></a>
+                <a href="https://github.com/lucianatux" target="_blank"><img src={navIcon2} alt="github-icon" /></a>
+                <a href="https://www.instagram.com/lucianaholamundo/" target="_blank"><img src={navIcon3} alt="instagram-icon" /></a>
               </div>
             </span>
           </Navbar.Collapse>
