@@ -82,11 +82,6 @@ p.danger {
 	color: red;
 }
 
-/* This changes all the animations globally */
-:root {
-  --animate-duration: 6s;
-  --animate-delay: 2s;
-}
 
 
 /************ Navbar Css ************/
@@ -295,13 +290,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 @keyframes updown {
     0% {
-        transform: translateY(-20px);
+        transform: translateY(-30px);
     }
     50% {
-        transform: translateY(20px);
+        transform: translateY(30px);
     }
     100% {
-        transform: translateY(-20px);
+        transform: translateY(-30px);
     }
 }
 .txt-rotate > .wrap {
