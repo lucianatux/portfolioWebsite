@@ -1,105 +1,72 @@
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
-import colorSharp2 from "../assets/img/color-sharp2.png";
-import { ProjectCard } from "./ProjectCard";
-
-
+import meter1 from "../assets/img/meter1.svg";
+import meter2 from "../assets/img/meter2.svg";
+import meter3 from "../assets/img/meter3.svg";
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+//import arrow1 from "../assets/img/arrow1.svg";
+//import arrow2 from "../assets/img/arrow2.svg";
+import colorSharp from "../assets/img/color-sharp.png"
 
 export const Experience = () => {
-
-  const experiences = [
-    {
-        id:1,
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5
     },
-    {
-        id:2,
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 4
     },
-    {
-        id:3,
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2
     },
-    {
-        id:4,
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-        id:5,
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-        id:6,
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
-  ];
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+  };
 
   return (
     <section className="experience" id="experience">
-      <Container>
-        <Row>
-          <Col size={12}>
-           
-              <div >
-              <div>
-                <h2>Experience</h2>
+        <div className="container">
+            <div className="row">
+                <div className="col-12">
+                    <div className="skill-bx wow zoomIn">
+                        <h2>Experience</h2>
+                        <p></p>
+                        <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
+                            <div className="item">
+                                <img src={meter1} alt="porcentaje alto" />
+                                <h5>Harvard University</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter2} alt="porcentaje medio" />
+                                <h5>Ticmas Academy</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter1} alt="porcentaje alto" />
+                                <h5>CUI</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter1} alt="porcentaje alto" />
+                                <h5>FreeCodeCamp</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter3} alt="porcentaje bajo" />
+                                <h5>Argentina Programa</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter1} alt="porcentaje alto" />
+                                <h5>UNC FAMAF</h5>
+                            </div>
+                        </Carousel>
+                    </div>
                 </div>
-                <p>Web Developer - Game Developer</p>
-                <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                  <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                    <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
-                    </Nav.Item>
-                  </Nav>
-                  <Tab.Content id="slideInUp" >
-                    <Tab.Pane eventKey="first">
-                      <Row>
-                      {
-                          experiences.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
-                                />
-                            )
-                          })
-                        }
-                      </Row>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="second">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
-                  </Tab.Content>
-                </Tab.Container>
-              </div>
-
-          </Col>
-        </Row>
-      </Container>
-      <img className="background-image-right" src={colorSharp2} alt="background right"></img>
+            </div>
+        </div>
+        <img className="background-image-left" src={colorSharp} alt="background" />
     </section>
   )
 }

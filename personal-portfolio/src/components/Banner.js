@@ -74,9 +74,11 @@ export const Banner = () => {
               <p>
                   Web Developer | Game Developer
               </p>
-              <button onClick={() => console.log("connect")}>
-                Let’s Connect <ArrowRightCircle size={25} />
-              </button>
+              <a href="#connect">
+                <button onClick={() => console.log("connect")}>
+                  Let’s Connect <ArrowRightCircle size={25} />
+                </button>
+              </a>
             </div>
           </Col>
           <Col xs={12} md={6} xl={5}>
