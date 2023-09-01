@@ -8,21 +8,20 @@ import colorSharp from "../assets/img/color-sharp.png"
 export const Skills = () => {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
-      items: 6
+      items: 4
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 5
+      items: 3
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 3
+      items: 2
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 2
+      items: 1
     }
   };
 
@@ -36,81 +35,42 @@ export const Skills = () => {
                         <div>
                           <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <h2>FRONTEND</h2>
-                            </div>
-                            <div className="item">
+                                <h4>FRONTEND</h4>
                                 <img src={meter1} alt="porcentaje alto" />
                                 <h5>Web Development</h5>
-                            </div>
-                            <div className="item">
                                 <img src={meter2} alt="porcentaje medio" />
                                 <h5>Brand Identity</h5>
-                            </div>
-                            <div className="item">
                                 <img src={meter3} alt="porcentaje bajo" />
                                 <h5>Logo Design</h5>
                             </div>
                             <div className="item">
+                            <h4>BACKEND</h4>
                                 <img src={meter1} alt="porcentaje alto" />
                                 <h5>Web Development</h5>
-                            </div>
-                            <div className="item">
-                                <h2>BACKEND</h2>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt="porcentaje alto" />
-                                <h5>Web Development</h5>
-                            </div>
-                            <div className="item">
                                 <img src={meter2} alt="porcentaje medio" />
                                 <h5>Brand Identity</h5>
-                            </div>
-                            <div className="item">
                                 <img src={meter3} alt="porcentaje bajo" />
                                 <h5>Logo Design</h5>
                             </div>
                             <div className="item">
+                            <h4>SOFT SKILLS</h4>
                                 <img src={meter1} alt="porcentaje alto" />
                                 <h5>Web Development</h5>
-                            </div>
-                            <div className="item">
-                                <h2>SOFTSKILLS</h2>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt="porcentaje alto" />
-                                <h5>Web Development</h5>
-                            </div>
-                            <div className="item">
                                 <img src={meter2} alt="porcentaje medio" />
                                 <h5>Brand Identity</h5>
-                            </div>
-                            <div className="item">
                                 <img src={meter3} alt="porcentaje bajo" />
                                 <h5>Logo Design</h5>
                             </div>
                             <div className="item">
+                            <h4>OTHERS</h4>
                                 <img src={meter1} alt="porcentaje alto" />
                                 <h5>Web Development</h5>
-                            </div>
-                            <div className="item">
-                                <h2>OTHERS</h2>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt="porcentaje alto" />
-                                <h5>Web Development</h5>
-                            </div>
-                            <div className="item">
                                 <img src={meter2} alt="porcentaje medio" />
                                 <h5>Brand Identity</h5>
-                            </div>
-                            <div className="item">
                                 <img src={meter3} alt="porcentaje bajo" />
                                 <h5>Logo Design</h5>
                             </div>
-                            <div className="item">
-                                <img src={meter1} alt="porcentaje alto" />
-                                <h5>Web Development</h5>
-                            </div>
+                            
                         </Carousel>
                         </div>
                     </div>

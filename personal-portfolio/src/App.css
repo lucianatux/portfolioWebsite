@@ -48,7 +48,7 @@ a:hover {
 }
 
 img {
-  width: 100%;
+  width: 90%;
   height: auto;
 }
 
@@ -335,6 +335,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   bottom: 0;
   width: 40%;
   z-index: -4;
+}
+.item{
+display: inline-block;
 }
 
 /************ Projects Css ************/
