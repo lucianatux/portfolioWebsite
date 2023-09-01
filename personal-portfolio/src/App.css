@@ -81,6 +81,14 @@ p.success {
 p.danger {
 	color: red;
 }
+
+/* This changes all the animations globally */
+:root {
+  --animate-duration: 6s;
+  --animate-delay: 2s;
+}
+
+
 /************ Navbar Css ************/
 nav.navbar {
   padding: 18px 0;
