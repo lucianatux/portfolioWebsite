@@ -1,6 +1,5 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import colorSharp from "../assets/img/color-sharp.png"
 import logoandroid from "../assets/img/androidstudio65.png";
 import logoangular from "../assets/img/angular65.png";
 import logohtml from "../assets/img/html85.png";
@@ -120,7 +119,6 @@ export const Skills = () => {
                                 <h5>ADOBE PREMIERE</h5>
                                 <img src={logophot} alt="photoshop-logo" />
                                 <h5>ADOBE PHOTOSHOP</h5>
-
                             </div>
                         </Carousel>
                         </div>
@@ -128,7 +126,6 @@ export const Skills = () => {
                 </div>
             </div>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="background" />
     </section>
   )
 }
