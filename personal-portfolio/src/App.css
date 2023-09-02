@@ -303,7 +303,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
 }
 .skill-bx {
-  background: #151515;
+  background: #585858;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
@@ -314,7 +314,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-weight: 700;
 }
 .skill p {
-    color: #B8B8B8;
+    color: #151515;
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;

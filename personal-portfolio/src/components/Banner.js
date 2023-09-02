@@ -85,7 +85,7 @@ export const Banner = () => {
             <TrackVisibility>
             {({ isVisible }) =>
             <div  className={isVisible ? "animate__animated animate__zoomInRight  animate_slower animate__delay-1s": ""}>
-              <img src={headerImg} alt="Header Img" />
+              <img src={headerImg} alt="Header Img" loading="lazy"/>
             </div>}
             </TrackVisibility>
             

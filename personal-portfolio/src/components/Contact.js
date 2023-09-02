@@ -24,7 +24,7 @@ export const Contact = () => {
       <Container>
         <Row className="align-items-center">
           <Col size={12} md={6}>
-            <img src={contactImg} alt="Contact Us" />
+            <img src={contactImg} alt="Contact Us" loading="lazy"/>
           </Col>
           <Col size={12} md={6}>
             <div>
