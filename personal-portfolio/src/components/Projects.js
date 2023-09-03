@@ -1,9 +1,9 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg3 from "../assets/img/project-img3.png";
 import projAndroid from "../assets/img/projAndroid.png";
 import projLyra from "../assets/img/projLyra.png";
-import projFrontera from "../assets/img/projFrontera.png";
+import projBotonera from "../assets/img/proyBotonera.png";
+import projCalcul from "../assets/img/projCalcul.png";
+import projFrontera from "../assets/img/projFrontera2.png";
 import projSimulador from "../assets/img/proj-simulador.png";
 //import projAp1 from "../assets/img/projAp1.png";
 import projAp2 from "../assets/img/projAp2.png";
@@ -34,13 +34,13 @@ export const Projects = () => {
         id:3,
       title: "Drum Machine",
       description: "REACT JAVASCRIPT",
-      imgUrl: projImg3,
+      imgUrl: projBotonera,
     },
     {
         id:4,
       title: "Calculator",
       description: "REACT JAVASCRIPT",
-      imgUrl: projImg1,
+      imgUrl: projCalcul,
     },
     {
         id:5,

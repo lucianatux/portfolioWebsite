@@ -357,14 +357,13 @@ display: inline-block;
   text-align: center;
 }
 .project .nav.nav-pills {
-  width: 100%;
+  width: 70%;
   margin: 0 auto;
-  border-radius: 20px;
-  background-color: rgb(255 255 255 / 10%);
+  border-radius: 40px;
   overflow: hidden;
 }
 .project .nav.nav-pills .nav-item {
-  width: 33.333%;
+  width: 33.3333%;
 }
 .project .nav.nav-pills .nav-link {
   background-color: transparent;
@@ -413,7 +412,7 @@ display: inline-block;
   position: relative;
   border-radius: 30px;
   overflow: hidden;
-  margin-bottom: 24px;
+  margin: 5px 5px 24px 5px;
 }
 .proj-imgbx::before {
   content: "";
@@ -465,6 +464,10 @@ display: inline-block;
 .cardImg{
   border-radius: 40px;
   padding: 20px;
+}
+
+row{
+  margin: 20px;
 }
 
 /************ Contact ************/
