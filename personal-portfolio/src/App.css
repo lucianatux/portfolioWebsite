@@ -48,7 +48,7 @@ a:hover {
 }
 
 img {
-  width: 90%;
+  width: 100%;
   height: auto;
 }
 
@@ -299,7 +299,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Skills Css ************/
 .skill {
-  padding-top: 50px;
+  padding-top: 40px;
   position: relative;
   background-color: #000;
 
@@ -307,8 +307,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill-bx {
   border-radius: 64px;
   text-align: center;
-  padding: 60px 50px;
-  margin-top: -60px;
+  padding: 40px 30px;
 }
 .skill h2 {
 	font-size: 45px;
@@ -342,7 +341,7 @@ display: inline-block;
 
 /************ Projects Css ************/
 .project {
-  padding: 80px 0;
+  padding: 40px 0;
   position: relative;
   background-color: black;
 }
@@ -354,28 +353,25 @@ display: inline-block;
 .project p {
   color: #B8B8B8;
   font-size: 18px;
-  letter-spacing: 0.8px;
-  line-height: 1.5em;
   margin: 14px auto 30px auto;
   text-align: center;
-  width: 56%;
 }
 .project .nav.nav-pills {
-  width: 72%;
+  width: 100%;
   margin: 0 auto;
-  border-radius: 50px;
+  border-radius: 20px;
   background-color: rgb(255 255 255 / 10%);
   overflow: hidden;
 }
 .project .nav.nav-pills .nav-item {
-  width: 33.33333%;
+  width: 33.333%;
 }
 .project .nav.nav-pills .nav-link {
   background-color: transparent;
   border-radius: 0;
   padding: 17px 0;
   color: #fff;
-  width: 100%;
+  width: 80%;
   font-size: 17px;
   letter-spacing: 0.8px;
   font-weight: 500;
@@ -466,7 +462,12 @@ display: inline-block;
   z-index: -4;
 }
 
-/************ Projects Css ************/
+.cardImg{
+  border-radius: 40px;
+  padding: 20px;
+}
+
+/************ Contact ************/
 .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   padding: 60px 0 200px 0;
