@@ -55,70 +55,70 @@ export const Skills = () => {
                             <div className="item">
                                 <h4>FRONTEND</h4>
                                 <img src={logohtml} alt="html-logo" />
-                                <h5>HTML</h5>
+                                <p>HTML</p>
                                 <img src={logocss} alt="css-logo" />
-                                <h5>CSS</h5>
+                                <p>CSS</p>
                                 <img src={logobootstrap} alt="bootstrap-logo" />
-                                <h5>BOOTSTRAP, ETC</h5>
+                                <p>BOOTSTRAP, ETC</p>
                             </div>
                             <div className="item">
                                 <h4>FRONTEND</h4>
                                 <img src={logojavascript} alt="javascript-logo" />
-                                <h5>JAVASCRIPT</h5>
+                                <p>JAVASCRIPT</p>
                                 <img src={logoreact} alt="react-logo" />
-                                <h5>REACT</h5>
+                                <p>REACT</p>
                                 <img src={logoangular} alt="angular-logo" />
-                                <h5>ANGULAR</h5>
+                                <p>ANGULAR</p>
                             </div>
                             <div className="item">
                             <h4>BACKEND</h4>
                                 <img src={logojava} alt="java-logo" />
-                                <h5>JAVA</h5>
+                                <p>JAVA</p>
                                 <img src={logospringboot} alt="springboot-logo" />
-                                <h5>SPRINGBOOT</h5>
+                                <p>SPRINGBOOT</p>
                                 <img src={logomysql} alt="mysql-logo" />
-                                <h5>MYSQL</h5>
+                                <p>MYSQL</p>
                             </div>
                             <div className="item">
                             <h4>BACKEND</h4>
                                 <img src={logokotlin} alt="kotlin-logo" />
-                                <h5>KOTLIN</h5>
+                                <p>KOTLIN</p>
                                 <img src={logoandroid} alt="android-studio-logo" />
-                                <h5>ANDROID STUDIO</h5>
+                                <p>ANDROID STUDIO</p>
                                 <img src={logoc} alt="c++logo" />
-                                <h5>C++</h5>
+                                <p>C++</p>
                             </div>
                             <div className="item">
                             <h4>SOFT SKILLS</h4>
                                 <img src={logocom} alt="communication" />
-                                <h5>COMMUNICATION</h5>
+                                <p>COMMUNICATION</p>
                                 <img src={logotw} alt="teamwork" />
-                                <h5>TEAMWORK</h5>
+                                <p>TEAMWORK</p>
                                 <img src={logost} alt="self-taught" />
-                                <h5>SELF-TAUGHT</h5>
+                                <p>SELF-TAUGHT</p>
                             </div>
                             <div className="item">
                             <h4>SOFT SKILLS</h4>
                                 <img src={logocreat} alt="creativity" />
-                                <h5>CREATIVITY</h5>
+                                <p>CREATIVITY</p>
                                 <img src={logologic} alt="logic" />
-                                <h5>LOGIC</h5>
+                                <p>LOGIC</p>
                             </div>
                             <div className="item">
                             <h4>OTHERS</h4>
                                 <img src={logoeng} alt="english" />
-                                <h5>ENGLISH B2</h5>
+                                <p>ENGLISH B2</p>
                                 <img src={logogit} alt="git-logo" />
-                                <h5>GIT</h5>
+                                <p>GIT</p>
                                 <img src={logogithub} alt="github-logo" />
-                                <h5>GITHUB</h5>
+                                <p>GITHUB</p>
                             </div>
                             <div className="item">
                             <h4>OTHERS</h4>
                                 <img src={logoprem} alt="premiere-logo" />
-                                <h5>ADOBE PREMIERE</h5>
+                                <p>ADOBE PREMIERE</p>
                                 <img src={logophot} alt="photoshop-logo" />
-                                <h5>ADOBE PHOTOSHOP</h5>
+                                <p>ADOBE PHOTOSHOP</p>
                             </div>
                         </Carousel>
                         </div>
