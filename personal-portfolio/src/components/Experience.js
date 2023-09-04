@@ -1,72 +1,59 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
-//import arrow1 from "../assets/img/arrow1.svg";
-//import arrow2 from "../assets/img/arrow2.svg";
-import colorSharp from "../assets/img/color-sharp.png"
+import { Container, Row, Col } from "react-bootstrap";
+import { ProjectCard } from "./ProjectCard";
+import freelance from "../assets/img/freelance1.png";
+import sales from "../assets/img/sales1.png";
+import video from "../assets/img/video.png";
+
+
 
 export const Experience = () => {
-  const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5
+
+  const experiences = [
+    {
+        id:1,
+      title: "Freelance Web Developer | 2023",
+      description: "Web Development",
+      imgUrl: freelance,
     },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 4
+    {
+        id:2,
+      title: "Distribuidora Lyra | 2005-2023",
+      description: "Web Design | Marketing | Administration | Distribution | Wholesale Sales",
+      imgUrl: sales,
     },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1
+    {
+        id:3,
+      title: "Caminos SRL | 1998-2001",
+      description: "Video production and editing services",
+      imgUrl: video,
     }
-  };
+  ]
+    
 
   return (
     <section className="experience" id="experience">
-        <div className="container">
-            <div className="row">
-                <div className="col-12">
-                    <div className="skill-bx wow zoomIn">
-                        <h2>Experience</h2>
-                        <p></p>
-                        <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                            <div className="item">
-                                <img src={meter1} alt="porcentaje alto" loading="lazy" />
-                                <h5>Harvard University</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter2} alt="porcentaje medio" loading="lazy" />
-                                <h5>Ticmas Academy</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt="porcentaje alto" loading="lazy" />
-                                <h5>CUI</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt="porcentaje alto" loading="lazy"/>
-                                <h5>FreeCodeCamp</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter3} alt="porcentaje bajo" loading="lazy" />
-                                <h5>Argentina Programa</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt="porcentaje alto" loading="lazy" />
-                                <h5>UNC FAMAF</h5>
-                            </div>
-                        </Carousel>
-                    </div>
+      <Container>
+        <Row>
+          <Col size={12}>
+              <div >
+                <h2>Experience</h2>
+                <p>Web Developer - Game Developer</p>
+                <div className="experienceCard">
+                {
+                          experiences.map((project, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...project}
+                                />
+                            )
+                          })
+                        }
                 </div>
-            </div>
-        </div>
-        <img className="background-image-left" src={colorSharp} alt="background" />
+              </div>
+          </Col>
+        </Row>
+      </Container>
     </section>
   )
 }

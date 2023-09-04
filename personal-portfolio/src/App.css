@@ -416,8 +416,8 @@ display: inline-block;
 }
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  opacity: 0.85;
+  background: linear-gradient(90.21deg, #4e1861 -5.91%, #4A2FBD 111.58%);
+  opacity: 0.90;
   position: absolute;
   width: 100%;
   height: 0;
@@ -463,12 +463,45 @@ display: inline-block;
 
 .cardImg{
   border-radius: 40px;
-  padding: 20px;
+  background: #eee;
 }
 
 row{
   margin: 20px;
 }
+
+/************ Experience Css ************/
+.experience {
+  padding: 40px 0;
+  position: relative;
+  background-color: black;
+}
+.experience h2 {
+	font-size: 45px;
+	font-weight: 700;
+  text-align: center;
+}
+.experience p {
+  color: #B8B8B8;
+  font-size: 18px;
+  margin: 14px auto 30px auto;
+  text-align: center;
+}
+
+.experienceCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.experienceCard .cardImg {
+max-width: 400px;
+}
+
+.experienceCard .proj-imgbx {
+margin: 20px;
+  }
+
 
 /************ Contact ************/
 .contact {
