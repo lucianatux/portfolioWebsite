@@ -22,7 +22,7 @@ import logogit from "../assets/img/git75.png";
 import logogithub from "../assets/img/github75.png";
 import logoprem from "../assets/img/premiere85.png";
 import logophot from "../assets/img/photoshop85.png";
-import character from "../assets/img/airhugstr.png";
+import character from "../assets/img/sunset4.png";
 
 export const Skills = () => {
   const responsive = {
