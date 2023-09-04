@@ -307,12 +307,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill-bx {
   border-radius: 64px;
   text-align: center;
-  padding: 40px 30px;
+  padding: 30px 10px;
 }
 .skill h2 {
 	font-size: 45px;
 	font-weight: 700;
   padding-bottom: 30px;
+  text-align: center;
 }
 .skill p {
     color: #ddd;
@@ -337,6 +338,12 @@ display: inline-block;
 
 .owl-carousel .item img {
   filter: invert(0.9);
+}
+
+.character{
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
 }
 
 /************ Projects Css ************/

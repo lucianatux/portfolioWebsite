@@ -22,7 +22,7 @@ import logogit from "../assets/img/git75.png";
 import logogithub from "../assets/img/github75.png";
 import logoprem from "../assets/img/premiere85.png";
 import logophot from "../assets/img/photoshop85.png";
-import character from "../assets/img/jedichar2.png";
+import character from "../assets/img/airhugstr.png";
 
 export const Skills = () => {
   const responsive = {
@@ -48,9 +48,9 @@ export const Skills = () => {
     <section className="skill" id="skills">
       <div className="container">
         <div className="row">
-          <div className="col-8">
+        <h2>Skills</h2>
+          <div className="col-9">
             <div className="skill-bx wow zoomIn">
-              <h2>Skills</h2>
               <div>
                 <Carousel
                   responsive={responsive}
@@ -129,7 +129,7 @@ export const Skills = () => {
               </div>
             </div>
           </div>
-          <div className="col-4 character">
+          <div className="col-3 character">
             <img src={character} alt="character"/>
           </div>
         </div>
