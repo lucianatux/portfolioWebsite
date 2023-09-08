@@ -37,7 +37,6 @@ export const Experience = () => {
           <Col size={12}>
               <div >
                 <h2>Experience</h2>
-                <p>Web Developer - Game Developer</p>
                 <div className="experienceCard">
                 {
                           experiences.map((project, index) => {

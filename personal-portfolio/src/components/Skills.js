@@ -22,7 +22,6 @@ import logogit from "../assets/img/git75.png";
 import logogithub from "../assets/img/github75.png";
 import logoprem from "../assets/img/premiere85.png";
 import logophot from "../assets/img/photoshop85.png";
-import character from "../assets/img/sunset4.png";
 
 export const Skills = () => {
   const responsive = {
@@ -49,7 +48,7 @@ export const Skills = () => {
       <div className="container">
         <div className="row">
         <h2>Skills</h2>
-          <div className="col-9">
+          <div className="col-12">
             <div className="skill-bx wow zoomIn">
               <div>
                 <Carousel
@@ -128,9 +127,6 @@ export const Skills = () => {
                 </Carousel>
               </div>
             </div>
-          </div>
-          <div className="col-3 character">
-            <img src={character} alt="character"/>
           </div>
         </div>
       </div>

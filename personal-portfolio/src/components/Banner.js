@@ -1,17 +1,16 @@
-//import { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.png";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 
-
 export const Banner = () => {
-  /*
+  
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = ["Web Developer", "Web Designer"];
+  const toRotate = ["I'm Luciana"];
   const period = 2000;
 
   useEffect(() => {
@@ -50,43 +49,35 @@ export const Banner = () => {
       setIndex((prevIndex) => prevIndex + 1);
     }
   };
-*/
+
   return (
     <section className="banner" id="home">
       <Container>
-        <Row className="aligh-items-center">
-          <Col xs={12} md={6} xl={7}>
-            <div>
+        <Row >
+          <Col xs={12} md={6} xl={7} className="presentation">
               <span className="tagline">Welcome to my Portfolio</span>
               <h1>
-                {`Hi! I'm Luciana`}
-                {/*}
+                {`Hi! `}
                 <span
                   className="txt-rotate"
                   dataperiod="1000"
-                  data-rotate='[ "Web Developer", "Web Designer"]'
+                  data-rotate='[ "I am Luciana"]'
                 >
                   <span className="wrap">{text}</span>
                 </span>
-  */}
               </h1>
-              <p>
-                  Web Developer | Game Developer
-              </p>
-              <a href="#connect">
+              <h3>Web Developer | Game Developer</h3>
+              <a href="#connect" className="contactme">
                 <button onClick={() => console.log("connect")}>
-                  Let’s Connect <ArrowRightCircle size={25} />
+                  Contact me <ArrowRightCircle size={25} />
                 </button>
               </a>
-            </div>
           </Col>
           <Col xs={12} md={6} xl={5}>
-           
             <div className="headerimg">
               <img src={headerImg} alt="Header Img" loading="lazy"/>
             </div>
-            
-          </Col>
+            </Col>
         </Row>
       </Container>
     </section>

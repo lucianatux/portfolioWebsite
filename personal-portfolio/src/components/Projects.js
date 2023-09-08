@@ -59,7 +59,7 @@ export const Projects = () => {
   const projects2022 = [
     {
         id:11,
-      title: "PortfolioArgentinaPrograma",
+      title: "Portfolio Argentina Programa",
       description: "TYPESCRIPT ANGULAR JAVA SPRINGBOOT MYSQL",
       imgUrl: projAp2,
     },
@@ -98,7 +98,7 @@ export const Projects = () => {
                 <h2>Projects</h2>
                 <p>Web Developer - Game Developer</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                  <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+                  <Nav className="nav-tabs mb-5 justify-content-center align-items-center" id="tabs-tab">
                     <Nav.Item>
                       <Nav.Link eventKey="first">2023</Nav.Link>
                     </Nav.Item>
