@@ -92,8 +92,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 .headerimg img{
-  width: 50%;
-  filter: invert(0.9);
+  width: 80%;
 }
 
 /************ Navbar Css ************/
@@ -251,6 +250,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 0;
   padding: 150px 0 100px 0;
   height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(25, 25, 22, 0.5),
+    rgba(9, 9, 9, 0.5)
+  ), url("./assets/img/universo6.png");
   background-color: var(--sixth-color);
 }
 .banner .tagline {
@@ -305,20 +309,46 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner button:hover svg {
   margin-left: 25px;
 }
-.banner img {
+/*.banner img {
   animation: updown 3s linear infinite;
 }
 @keyframes updown {
     0% {
-        transform: translateY(-30px);
+        transform: translateX(-5px);
     }
     50% {
-        transform: translateY(30px);
+        transform: translateX(5px);
     }
     100% {
-        transform: translateY(-30px);
+        transform: translateX(-5px);
     }
+}*/
+
+.banner img {
+  margin-top: 100px;
+  animation: circularMotion 6s linear infinite;
+  transform-origin: center bottom;
 }
+
+@keyframes circularMotion {
+  0% {
+    transform: translateX(0) translateY(-5px);
+  }
+  25% {
+    transform: translateX(5px) translateY(0);
+  }
+  50% {
+    transform: translateX(0) translateY(5px);
+  }
+  75% {
+    transform: translateX(-5px) translateY(0);
+  }
+  100% {
+    transform: translateX(0) translateY(-5px);
+  }
+}
+
+
 .txt-rotate > .wrap {
   border-right: 0.08em solid var(--nineth-color);
 }
