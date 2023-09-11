@@ -57,7 +57,8 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={7} className="presentation">
               <span className="tagline">Welcome to my Portfolio</span>
               <h1>
-                {`Hi! `}
+                {`Hello World! `}
+                <br/>
                 <span
                   className="txt-rotate"
                   dataperiod="1000"

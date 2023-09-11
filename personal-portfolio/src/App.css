@@ -532,6 +532,10 @@ display: inline-block;
   background: var(--first-color);
 }
 
+.cardproject{
+  max-width: 300px;
+}
+
 /************ Experience Css ************/
 .experience {
   padding: 40px 0;
