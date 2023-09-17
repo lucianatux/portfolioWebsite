@@ -576,6 +576,8 @@ max-width: 300px;
   padding: 30px 0 100px 0;
   background-image: url("./assets/img/redes2.jpg");
   background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .contact img {
   width: 80%;

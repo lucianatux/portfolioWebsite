@@ -1,11 +1,11 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import harvard from "../assets/img/harvard1.png";
+import harvard from "../assets/img/harvard.png";
 import ticmas from "../assets/img/ticmas.png";
 import cui from "../assets/img/cui.png";
 import conectaempleo from "../assets/img/conectaempleo.png";
 import freecodecamp from "../assets/img/freecc.png";
-import ap from "../assets/img/ap3.png";
+import ap from "../assets/img/argentinaprograma.png";
 import famaf from "../assets/img/famaf.png";
 
 
@@ -36,7 +36,7 @@ export const Education = () => {
     {
       id:4,
     title: "Conecta Empleo | 2022",
-    description: "Introducción al Diseño de VideoJuegos",
+    description: "Introduction to Game Design",
     imgUrl: conectaempleo,
   },
   {
@@ -54,7 +54,7 @@ export const Education = () => {
   {
       id:7,
     title: "FAMAF UNC | 2013-2018",
-    description: "Ciencias de la Computación",
+    description: "Computer Science",
     imgUrl: famaf,
   }
   ]
