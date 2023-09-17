@@ -27,7 +27,6 @@
   --seventh-color: #d9d9d91a;
   --eighth-color: #ffffff80;
   --nineth-color: #444;
-  --tenth-color: #4c1837;
 }
 
 /************ Default Css ************/
@@ -579,9 +578,7 @@ max-width: 300px;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.contact img {
-  width: 80%;
-}
+
 .contact h2 {
 	font-size: 45px;
 	font-weight: 700;
@@ -645,6 +642,28 @@ max-width: 300px;
 .contact form button:hover::before {
   width: 100%;
 }
+
+.email{
+  width: 50px;
+}
+
+.contact img {
+  animation: horizontalMotion 5s linear infinite;
+  transform-origin: center bottom;
+}
+
+@keyframes horizontalMotion {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(150px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 
 /************ Footer Css ************/
 .footer {
