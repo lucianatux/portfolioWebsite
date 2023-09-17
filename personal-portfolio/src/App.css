@@ -326,7 +326,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .banner img {
   margin-top: 100px;
-  animation: circularMotion 6s linear infinite;
+  animation: circularMotion 10s linear infinite;
   transform-origin: center bottom;
 }
 
@@ -536,35 +536,36 @@ display: inline-block;
   max-width: 300px;
 }
 
-/************ Experience Css ************/
-.experience {
+/************ Experience Css  Education Css************/
+.experience, .education {
   padding: 40px 0;
   position: relative;
   background-color: var(--sixth-color);
 }
-.experience h2 {
+.experience h2, .education h2 {
 	font-size: 45px;
 	font-weight: 700;
   text-align: center;
+  margin-bottom: 30px;
 }
-.experience p {
+.experience p, .education p {
   color: var(--fifth-color);
   font-size: 18px;
   margin: 14px auto 30px auto;
   text-align: center;
 }
 
-.experienceCard {
+.experienceCard, .educationCard {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.experienceCard .cardImg {
+.experienceCard .cardImg, .educationCard .cardImg {
 max-width: 400px;
 }
 
-.experienceCard .proj-imgbx {
+.experienceCard .proj-imgbx, .educationCard .proj-imgbox {
 margin: 20px;
   }
 
