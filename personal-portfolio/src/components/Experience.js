@@ -18,7 +18,7 @@ export const Experience = () => {
     {
         id:2,
       title: "Distribuidora Lyra | 2005-2023",
-      description: "Web Design | Marketing | Administration | Distribution | Wholesale Sales",
+      description: "Web Design | Marketing | Distribution | Sales",
       imgUrl: sales,
     },
     {
@@ -35,7 +35,6 @@ export const Experience = () => {
       <Container>
         <Row>
           <Col size={12}>
-              <div >
                 <h2>Experience</h2>
                 <div className="experienceCard">
                 {
@@ -49,7 +48,6 @@ export const Experience = () => {
                           })
                         }
                 </div>
-              </div>
           </Col>
         </Row>
       </Container>

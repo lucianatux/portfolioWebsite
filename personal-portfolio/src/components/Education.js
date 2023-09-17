@@ -65,7 +65,6 @@ export const Education = () => {
       <Container>
         <Row>
           <Col size={12}>
-              <div >
                 <h2>Education</h2>
                 <div className="educationCard">
                 {
@@ -79,7 +78,6 @@ export const Education = () => {
                           })
                         }
                 </div>
-              </div>
           </Col>
         </Row>
       </Container>
