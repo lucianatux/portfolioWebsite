@@ -5,13 +5,11 @@ import projBotonera from "../assets/img/proyBotonera.png";
 import projCalcul from "../assets/img/projCalcul.png";
 import projFrontera from "../assets/img/projFrontera2.png";
 import projSimulador from "../assets/img/proj-simulador.png";
-//import projAp1 from "../assets/img/projAp1.png";
 import projAp2 from "../assets/img/projAp2.png";
 import projVoz from "../assets/img/projVoz.png";
 import projGastos from "../assets/img/projGastos.png";
 import projArbol from "../assets/img/projArbol.png";
 import projTateti from "../assets/img/projTateti.png";
-import colorSharp2 from "../assets/img/color-sharp2.png";
 import { ProjectCard } from "./ProjectCard";
 
 
@@ -96,7 +94,7 @@ export const Projects = () => {
           <Col size={12}>
               <div >
                 <h2>Projects</h2>
-                <p>Web Developer - Game Developer</p>
+                <p>Some of my projects</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav className="nav-tabs mb-5 justify-content-center align-items-center" id="tabs-tab">
                     <Nav.Item>
@@ -148,7 +146,6 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2} alt="background right"></img>
     </section>
   )
 }
