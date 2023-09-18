@@ -447,17 +447,36 @@ display: inline-block;
   border-radius: 0 55px 55px 0;
 }
 .cardproject{
-  max-width: 300px;
-  padding: 15px;
-  background: var(--first-color) ;
-  margin: 15px;
-  border-radius: 20px;
-  color: var(--sixth-color);
+  max-width: 250px;
+border: 2px solid var(--fifth-color);
+border-radius: 30px;
+overflow: hidden;
+margin: 15px;
 }
 .projImg{
-  width: 80%;
-  border-radius: 10px;
-  margin: 10px;
+  width: 100%;
+}
+.proj-txtx{
+  padding: 15px;
+  background: var(--first-color) ;
+  color: var(--sixth-color);
+}
+.arrowlink{
+  padding: 0 10px;
+  text-decoration: none;
+  font-size: 20px;
+  border: 1px solid var(--fifth-color);
+  border-radius: 8px;
+  margin-left: 5px;
+}
+.arrowlink:hover{
+  border: 3px solid var(--fifth-color);
+  font-weight: 500;
+}
+.divprojectcard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /************ Experience Css  Education Css************/

@@ -121,6 +121,7 @@ export const Projects = () => {
                   <Tab.Content id="slideInUp" >
                     <Tab.Pane eventKey="first">
                       <Row>
+                      <div className="divprojectcard">
                       {
                           projects.map((project, index) => {
                             return (
@@ -131,6 +132,7 @@ export const Projects = () => {
                             )
                           })
                         }
+                        </div>
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
