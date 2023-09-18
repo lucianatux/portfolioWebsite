@@ -447,14 +447,10 @@ display: inline-block;
   border-radius: 0 55px 55px 0;
 }
 .cardproject{
-  max-width: 250px;
 border: 2px solid var(--fifth-color);
 border-radius: 30px;
 overflow: hidden;
 margin: 15px;
-}
-.projImg{
-  width: 100%;
 }
 .proj-txtx{
   padding: 15px;
@@ -494,7 +490,7 @@ margin: 15px;
 .experience p, .education p {
   color: var(--fifth-color);
   font-size: 18px;
-  margin: 14px auto 30px auto;
+  /*margin: 14px auto 30px auto;*/
   text-align: center;
 }
 .experienceCard, .educationCard {

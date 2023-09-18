@@ -15,20 +15,13 @@ import { ProjectCard } from "./ProjectCard";
 
 export const Projects = () => {
 
-  const projects = [
+  const projects2023a = [
     {
         id:1,
       title: "Comparator",
       description: "KOTLIN | ANDROID STUDIO",
       imgUrl: projAndroid,
       link: "https://github.com/lucianatux/ticmas-lab-android",
-    },
-    {
-        id:2,
-      title: "Lyra Website. Product Catalog",
-      description: "HTML CSS JAVASCRIPT",
-      imgUrl: projLyra,
-      link:"https://lucianatux.github.io/Lyra/",
     },
     {
         id:3,
@@ -42,14 +35,7 @@ export const Projects = () => {
       title: "Calculator",
       description: "REACT JAVASCRIPT",
       imgUrl: projCalcul,
-      link: "https://github.com/lucianatux/Calculator/",
-    },
-    {
-        id:5,
-        title: "Cross the border. Online Game",
-        description: "HTML CSS JAVASCRIPT",
-      imgUrl: projFrontera,
-      link: "https://lucianatux.github.io/JuegoCruzarLaFrontera/",
+      link: "https://lucianatux.github.io/Calculator/",
     },
     {
         id:6,
@@ -59,6 +45,36 @@ export const Projects = () => {
       link: "https://lucianatux.github.io/simulador/",
     },
   ];
+  const projects2023b = [
+    {
+      id:2,
+    title: "Lyra Website. Product Catalog",
+    description: "HTML CSS JAVASCRIPT",
+    imgUrl: projLyra,
+    link:"https://lucianatux.github.io/Lyra/",
+  },
+    {
+      id:5,
+      title: "Cross the border. Online Game",
+      description: "HTML CSS JAVASCRIPT",
+    imgUrl: projFrontera,
+    link: "https://lucianatux.github.io/JuegoCruzarLaFrontera/",
+  },
+    {
+      id:12,
+    title: "Text-to-speech converter",
+    description: "HTML CSS JAVASCRIPT",
+    imgUrl: projVoz,
+    link: "https://lucianatux.github.io/appTextoaVoz/",
+  },
+  {
+      id:13,
+    title: "Expense Management App",
+    description: "HTML CSS JAVASCRIPT",
+    imgUrl: projGastos,
+    link: "https://lucianatux.github.io/EcoFortuna/",
+  },
+  ];
 
   const projects2022 = [
     {
@@ -67,20 +83,6 @@ export const Projects = () => {
       description: "TYPESCRIPT ANGULAR JAVA SPRINGBOOT MYSQL",
       imgUrl: projAp2,
       link: "https://frontendlcc.web.app/",
-    },
-    {
-        id:12,
-      title: "Text-to-speech converter",
-      description: "HTML CSS JAVASCRIPT",
-      imgUrl: projVoz,
-      link: "https://lucianatux.github.io/appTextoaVoz/",
-    },
-    {
-        id:13,
-      title: "Expense Management App",
-      description: "HTML CSS JAVASCRIPT",
-      imgUrl: projGastos,
-      link: "https://lucianatux.github.io/EcoFortuna/",
     },
     {
         id:14,
@@ -112,10 +114,10 @@ export const Projects = () => {
                       <Nav.Link eventKey="first">2023</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">2022</Nav.Link>
+                      <Nav.Link eventKey="second">2023</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">2021</Nav.Link>
+                      <Nav.Link eventKey="third">2022</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" >
@@ -123,7 +125,7 @@ export const Projects = () => {
                       <Row>
                       <div className="divprojectcard">
                       {
-                          projects.map((project, index) => {
+                          projects2023a.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
@@ -137,6 +139,22 @@ export const Projects = () => {
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
                     <Row>
+                    <div className="divprojectcard">
+                      {
+                          projects2023b.map((project, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...project}
+                                />
+                            )
+                          })
+                        }
+                        </div>
+                      </Row>
+                    </Tab.Pane>
+                    <Tab.Pane eventKey="third">
+                    <div className="divprojectcard">
                       {
                           projects2022.map((project, index) => {
                             return (
@@ -147,10 +165,7 @@ export const Projects = () => {
                             )
                           })
                         }
-                      </Row>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                        </div>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
