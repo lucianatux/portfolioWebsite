@@ -21,36 +21,42 @@ export const Projects = () => {
       title: "Comparator",
       description: "KOTLIN | ANDROID STUDIO",
       imgUrl: projAndroid,
+      link: "https://github.com/lucianatux/ticmas-lab-android",
     },
     {
         id:2,
       title: "Lyra Website. Product Catalog",
       description: "HTML CSS JAVASCRIPT",
       imgUrl: projLyra,
+      link:"https://lucianatux.github.io/Lyra/",
     },
     {
         id:3,
       title: "Drum Machine",
       description: "REACT JAVASCRIPT",
       imgUrl: projBotonera,
+      link: "https://lucianatux.github.io/DrumMachine/",
     },
     {
         id:4,
       title: "Calculator",
       description: "REACT JAVASCRIPT",
       imgUrl: projCalcul,
+      link: "https://github.com/lucianatux/Calculator/",
     },
     {
         id:5,
         title: "Cross the border. Online Game",
         description: "HTML CSS JAVASCRIPT",
       imgUrl: projFrontera,
+      link: "https://lucianatux.github.io/JuegoCruzarLaFrontera/",
     },
     {
         id:6,
       title: "Simulator. Educational Game",
       description: "HTML CSS JAVASCRIPT",
       imgUrl: projSimulador,
+      link: "https://lucianatux.github.io/simulador/",
     },
   ];
 
@@ -60,30 +66,35 @@ export const Projects = () => {
       title: "Portfolio Argentina Programa",
       description: "TYPESCRIPT ANGULAR JAVA SPRINGBOOT MYSQL",
       imgUrl: projAp2,
+      link: "https://frontendlcc.web.app/",
     },
     {
         id:12,
       title: "Text-to-speech converter",
       description: "HTML CSS JAVASCRIPT",
       imgUrl: projVoz,
+      link: "https://lucianatux.github.io/appTextoaVoz/",
     },
     {
         id:13,
       title: "Expense Management App",
       description: "HTML CSS JAVASCRIPT",
       imgUrl: projGastos,
+      link: "https://lucianatux.github.io/EcoFortuna/",
     },
     {
         id:14,
       title: "Tree of Life website",
       description: "HTML CSS JAVASCRIPT",
       imgUrl: projArbol,
+      link: "https://lucianatux.github.io/arbolDeLaVida/",
     },
     {
         id:15,
       title: "Tateti game",
       description: "HTML CSS JAVASCRIPT",
       imgUrl: projTateti,
+      link: "https://lucianatux.github.io/Tateti/",
     },
   ];
 

@@ -35,12 +35,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
 }
-
 body {
   font-weight: 400;
   overflow-x: hidden;
@@ -49,28 +47,23 @@ body {
   color: var(--first-color) !important;
   font-family: 'Centra', sans-serif !important;
 }
-
 p, a, li, button, ul {
   margin: 0;
   padding: 0;
   line-height: normal;
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: none;
 }
-
 img {
   width: 100%;
   height: auto;
 }
-
 button {
   border: 0;
   background-color: transparent;
 }
-
 input:focus, textarea:focus, select:focus {
   outline: none;
 }
@@ -80,7 +73,7 @@ input:focus, textarea:focus, select:focus {
 		max-width: 100%;
 		padding: 0 150px;
 	}
-  .proj-txtx span{
+  .card-txtx span{
     font-size: 12px;
   }
 }
@@ -275,7 +268,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 20px;
   display: block;
 }
-
 .banner h3{
   color:var(--third-color);
   font-weight: 700;
@@ -309,27 +301,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner button:hover svg {
   margin-left: 25px;
 }
-/*.banner img {
-  animation: updown 3s linear infinite;
-}
-@keyframes updown {
-    0% {
-        transform: translateX(-5px);
-    }
-    50% {
-        transform: translateX(5px);
-    }
-    100% {
-        transform: translateX(-5px);
-    }
-}*/
 
 .banner img {
   margin-top: 100px;
   animation: circularMotion 10s linear infinite;
   transform-origin: center bottom;
 }
-
 @keyframes circularMotion {
   0% {
     transform: translateX(0) translateY(-5px);
@@ -348,7 +325,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 }
 
-
 .txt-rotate > .wrap {
   border-right: 0.08em solid var(--nineth-color);
 }
@@ -356,11 +332,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .presentation{
   margin-top: 40px;
 }
-
 .presentation > * {
   padding: 50px 0;
 }
-
 .contactme{
   text-decoration: none;
 }
@@ -399,11 +373,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 30%;
   margin: 0 auto 0 auto;
 }
-
 .item{
 display: inline-block;
 }
-
 .owl-carousel .item img {
   filter: invert(0.9);
 }
@@ -474,68 +446,18 @@ display: inline-block;
   border: 1px solid var(--eighth-color);
   border-radius: 0 55px 55px 0;
 }
-.proj-imgbx {
-  position: relative;
-  border-radius: 30px;
-  overflow: hidden;
-  margin: 5px 5px 24px 5px;
-}
-.proj-imgbx::before {
-  content: "";
-  background-color: var(--second-color);
-  opacity: 0.95;
-  position: absolute;
-  width: 100%;
-  height: 0;
-  transition: 0.4s ease-in-out;
-}
-.proj-imgbx:hover::before {
-  height: 100%;
-}
-.proj-txtx {
-  position: absolute;
-  text-align: center;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: 0.5s ease-in-out;
-  opacity: 0;
-  width: 100%;
-}
-.proj-imgbx:hover .proj-txtx {
-  top: 50%;
-  opacity: 1;
-}
-.proj-txtx h4 {
-  font-size: 30px;
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  line-height: 1.1em;
-}
-.proj-txtx span {
-  font-style: italic;
-  font-weight: 400;
-  font-size: 15px;
-  letter-spacing: 0.8px;
-}
-.background-image-right {
-  top: 20%;
-  position: absolute;
-  bottom: 0;
-  width: 35%;
-  right: 0;
-  z-index: -4;
-}
-
-.cardImg{
-  border-radius: 20px;
-  background: var(--first-color);
-}
-
 .cardproject{
   max-width: 300px;
-  padding: 25px;
-
+  padding: 15px;
+  background: var(--first-color) ;
+  margin: 15px;
+  border-radius: 20px;
+  color: var(--sixth-color);
+}
+.projImg{
+  width: 80%;
+  border-radius: 10px;
+  margin: 10px;
 }
 
 /************ Experience Css  Education Css************/
@@ -556,19 +478,63 @@ display: inline-block;
   margin: 14px auto 30px auto;
   text-align: center;
 }
-
 .experienceCard, .educationCard {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-
-/*.experienceCard .cardImg, .educationCard .cardImg {
-max-width: 300px;
-}*/
-
-
-
+.card-imgbx {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  margin: 5px 5px 24px 5px;
+}
+.card-imgbx::before {
+  content: "";
+  background-color: var(--second-color);
+  opacity: 0.95;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  transition: 0.4s ease-in-out;
+}
+.card-imgbx:hover::before {
+  height: 100%;
+}
+.card-txtx {
+  position: absolute;
+  text-align: center;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  width: 100%;
+}
+.card-imgbx:hover .card-txtx {
+  top: 50%;
+  opacity: 1;
+}
+.card-txtx h4 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1.1em;
+}
+.card-txtx span {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.8px;
+}
+.cardImg{
+  border-radius: 20px;
+  background: var(--first-color);
+}
+.doublecard{
+  max-width: 300px;
+  padding: 25px;
+}
 
 /************ Contact ************/
 .contact {
@@ -642,7 +608,6 @@ max-width: 300px;
 .contact form button:hover::before {
   width: 100%;
 }
-
 .email{
   width: 50px;
 }

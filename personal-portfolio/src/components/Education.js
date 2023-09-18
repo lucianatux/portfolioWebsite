@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import { ProjectCard } from "./ProjectCard";
+import { DoubleCard } from "./DoubleCard";
 import harvard from "../assets/img/harvard.png";
 import ticmas from "../assets/img/ticmas.png";
 import cui from "../assets/img/cui.png";
@@ -68,11 +68,11 @@ export const Education = () => {
                 <h2>Education</h2>
                 <div className="educationCard">
                 {
-                          educations.map((project, index) => {
+                          educations.map((doublecard, index) => {
                             return (
-                              <ProjectCard
+                              <DoubleCard
                                 key={index}
-                                {...project}
+                                {...doublecard}
                                 />
                             )
                           })

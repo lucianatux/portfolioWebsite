@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import { ProjectCard } from "./ProjectCard";
+import { DoubleCard } from "./DoubleCard";
 import freelance from "../assets/img/freelance1.png";
 import sales from "../assets/img/sales1.png";
 import video from "../assets/img/video.png";
@@ -40,7 +40,7 @@ export const Experience = () => {
                 {
                           experiences.map((project, index) => {
                             return (
-                              <ProjectCard
+                              <DoubleCard
                                 key={index}
                                 {...project}
                                 />
